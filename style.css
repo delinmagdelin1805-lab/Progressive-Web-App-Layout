@@ -1,0 +1,219 @@
+/* Reset */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+  font-family:Arial, sans-serif;
+
+  background:#020617;
+
+  color:white;
+
+  line-height:1.7;
+}
+
+/* Header */
+
+.header{
+  width:100%;
+
+  padding:20px 8%;
+
+  background:#111827;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  flex-wrap:wrap;
+}
+
+/* Logo */
+
+.logo{
+  font-size:32px;
+
+  font-weight:bold;
+
+  color:#38bdf8;
+}
+
+/* Navigation */
+
+.nav-links{
+  display:flex;
+
+  list-style:none;
+
+  gap:25px;
+}
+
+/* Links */
+
+.nav-links a{
+  color:white;
+
+  text-decoration:none;
+
+  font-size:17px;
+
+  transition:0.3s;
+}
+
+/* Hover */
+
+.nav-links a:hover{
+  color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+  min-height:80vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  text-align:center;
+
+  padding:40px 20px;
+}
+
+/* Content */
+
+.content{
+  max-width:750px;
+}
+
+/* Heading */
+
+.content h1{
+  font-size:60px;
+
+  margin-bottom:20px;
+}
+
+/* Paragraph */
+
+.content p{
+  font-size:20px;
+
+  color:#cbd5e1;
+
+  margin-bottom:35px;
+}
+
+/* Button */
+
+button{
+  padding:15px 35px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color:white;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+/* Hover */
+
+button:hover{
+  transform:
+    translateY(-5px);
+}
+
+/* Features */
+
+.features{
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+  gap:25px;
+
+  padding:60px 8%;
+}
+
+/* Card */
+
+.card{
+  background:#111827;
+
+  padding:35px;
+
+  border-radius:20px;
+
+  transition:0.3s;
+}
+
+/* Hover */
+
+.card:hover{
+  transform:
+    translateY(-10px);
+}
+
+/* Card Heading */
+
+.card h2{
+  margin-bottom:15px;
+
+  color:#38bdf8;
+}
+
+/* Card Paragraph */
+
+.card p{
+  color:#cbd5e1;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .header{
+    flex-direction:column;
+
+    gap:20px;
+  }
+
+  .nav-links{
+    flex-direction:column;
+
+    text-align:center;
+  }
+
+  .content h1{
+    font-size:40px;
+  }
+
+  .content p{
+    font-size:18px;
+  }
+
+}
